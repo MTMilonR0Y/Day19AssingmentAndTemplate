@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    background-color: #000f;
+}
+.logo-header{}
+
+.menu-header{}
+.menu-header nav{}
+.menu-header nav ul {
+	margin-top: 30px;
+    text-align: right;
+}
+.menu-header nav ul li{
+    display: inline-block;
+    padding: 0 13px;
+    position: relative;
+}
+.menu-header nav ul li::before {
+	content: "";
+	top: 40px;
+	left: 0;
+	position: absolute;
+	width: 50%;
+	height: 4px;
+	background-color: red;
+    transition: .3s;
+    transform: scaleX(0);
+}
+.menu-header nav ul li:hover::before {
+    background-color: red;
+    width: 100%;
+    transform: scaleX(1);
+}
+.menu-header nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 15px 0;
+	font-size: 17px;
+}
+.menu-header .brouwn{
+    color:#af7d36;
+}
+/* DropDown menu */
+/* .menu-header nav ul li{
+    position: relative;
+}
+.menu-header nav ul li ul {
+	position: absolute;
+	background-color: black;
+	width: 200px;
+	height: auto;
+	top: 12px;
+	left: 0;
+	text-align: left;
+}
+.menu-header nav ul li ul li{
+  display: block;
+
+}
+.menu-header nav ul li ul li a{
+  display: block;
+  color: #fff;
+}
+.menu-header nav ul li::before ul{
+    width: 0;
+	
+} */
+
+
+/* Figure section */
+figure{
+    background: url("https://i.ibb.co/8X8jR2y/ia-200000019.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px;
+    position: relative;
+    z-index: 9;
+}
+figure h1{
+        font-size: 53px;
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 20px;
+}
+figure h2 {
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 25px;
+    position: relative;
+}
+figure h2::before {
+	content: '';
+	position: absolute;
+	top: 20px;
+	left: 215px;
+	width: 70px;
+	height: 2px;
+	background-color: #fff;
+}
+figure h2::after {
+	content: '';
+	position: absolute;
+	top: 20px;
+	right: 215px;
+	width: 70px;
+	height: 2px;
+	background-color: #fff;
+}
+.bottn {
+	background-color: #bd8030;
+	color: #fff;
+	font-size: 21px;
+	padding: 10px 15px;
+	border-radius: 29px;
+	text-decoration: none;
+	font-weight: 600;
+    transition: .8s;
+}
+figure .bottn:hover{
+    background-color: #fff;
+    color: #c69453;
+}
+
+figure::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: -1;
+}
+/* section */
+section {
+	width: auto;
+	height: 430px;
+	margin: -16px 0;
+	background-color: #f8f8f8;
+}
+.intu {
+	text-align: center;
+	padding: 20px 0;
+	background-color: #fff;
+	margin: 50px 0;
+	box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+.intu:hover{
+    box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 8);
+}
+.intu:hover{
+    background-color: #ddd;
+}
+section .intu img{
+    transition: .5s;
+}
+section .intu:hover img{
+    transform: rotateY(360deg);
+}
+section .intu:hover .bottn{
+    color:#c69453;
+    background-color: #fff;
+}
+section .intu .bottn{
+    border: none;
+    padding: 10px 40px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #c69453;
+    transition: 1s;
+}
+section .intu .bottn:hover{
+    color: #fff;
+    background-color: #000;
+}
+.intu h3 {
+	font-size: 21px;
+	font-weight: 600;
+	padding: 4px;
+}
+.intu p {
+	font-size: 18px;
+	color: #767676;
+	padding: 5px;
+}
+.intu .bottn {
+    border-radius: 5px !important;
+    background-color: #c69453;
+  
+}
+.intu .bottn:hover{
+    background-color: #fff;
+    color: #c69453;
+}
+
+
+
+/* About section */
+summary {
+	display: list-item;
+	cursor: pointer;
+	margin-bottom: 16px;
+}
+.about-section .bottn {
+	display: inline-block;
+	margin: 5px 0;
+	border-radius: 8px;
+	background-color: #000;
+	padding: 6px 10px;
+}
+.about-section .bottn:hover{
+    color: #fff;
+}
+.about-section article h1 {
+	font-weight: 600;
+}
+.about-section article strong{
+    color: #af7d36;
+    font-weight: 600;
+}
+.contact-section .botton {
+	text-decoration: none;
+	background: #af7d36;
+	display: inline-block;
+	padding: 15px 40px;
+	color: #fff;
+}
+.contact-section h1{
+	font-weight: 600;
+	margin: 20px 0;
+}
+
+.contact-section .femail img {
+	width: auto;
+	height: 385px;
+	margin-top: 150px;
+}
+
+/* footer section */
+.dark{
+    background-color: #575657;
+}
+footer i{
+    font-size: 25px;
+    
+}
+.col-xl-6.right {
+	text-align: right;
+}
